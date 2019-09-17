@@ -22,31 +22,62 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaAlumno" rowHeight="69" id="0PW-3Y-rlq" customClass="CeldaAlumnoController" customModule="TableViews" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="69"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaAlumno" rowHeight="129" id="0PW-3Y-rlq" customClass="CeldaAlumnoController" customModule="TableViews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="129"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0PW-3Y-rlq" id="bMX-0x-0po">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="68.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="128.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YY-Bi-G3K">
-                                                    <rect key="frame" x="0.0" y="24" width="414" height="20.5"/>
+                                                    <rect key="frame" x="20" y="23" width="374" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellidos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMn-pd-2L6">
+                                                    <rect key="frame" x="20" y="59" width="71" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hb-DH-9i5">
+                                                    <rect key="frame" x="20" y="90" width="53" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matricula" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="el0-os-Aqi">
+                                                    <rect key="frame" x="326" y="57" width="71" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="0YY-Bi-G3K" firstAttribute="leading" secondItem="bMX-0x-0po" secondAttribute="leading" id="Oda-7M-sOc"/>
-                                                <constraint firstAttribute="trailing" secondItem="0YY-Bi-G3K" secondAttribute="trailing" id="jJf-p2-X9I"/>
-                                                <constraint firstItem="0YY-Bi-G3K" firstAttribute="centerY" secondItem="bMX-0x-0po" secondAttribute="centerY" id="jy3-Vr-Q2Q"/>
+                                                <constraint firstItem="el0-os-Aqi" firstAttribute="top" secondItem="0YY-Bi-G3K" secondAttribute="bottom" constant="10" id="0AS-O5-cWa"/>
+                                                <constraint firstItem="5Hb-DH-9i5" firstAttribute="leading" secondItem="bMX-0x-0po" secondAttribute="leadingMargin" id="0p7-4X-kHe"/>
+                                                <constraint firstItem="5Hb-DH-9i5" firstAttribute="top" secondItem="hMn-pd-2L6" secondAttribute="bottom" constant="10" id="4vp-8p-Vv5"/>
+                                                <constraint firstAttribute="trailing" secondItem="el0-os-Aqi" secondAttribute="trailing" constant="17" id="7nx-I6-ZmM"/>
+                                                <constraint firstItem="0YY-Bi-G3K" firstAttribute="leading" secondItem="bMX-0x-0po" secondAttribute="leading" constant="20" id="Oda-7M-sOc"/>
+                                                <constraint firstAttribute="trailing" secondItem="0YY-Bi-G3K" secondAttribute="trailing" constant="20" id="jJf-p2-X9I"/>
+                                                <constraint firstItem="hMn-pd-2L6" firstAttribute="top" secondItem="0YY-Bi-G3K" secondAttribute="bottom" constant="12" id="k1m-H1-kg5"/>
+                                                <constraint firstItem="hMn-pd-2L6" firstAttribute="leading" secondItem="bMX-0x-0po" secondAttribute="leadingMargin" id="kw0-3T-G63"/>
+                                                <constraint firstItem="0YY-Bi-G3K" firstAttribute="top" secondItem="bMX-0x-0po" secondAttribute="topMargin" constant="12" id="vT9-qV-PeR"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="lblApellidos" destination="hMn-pd-2L6" id="9YP-yj-I18"/>
+                                            <outlet property="lblCorreo" destination="5Hb-DH-9i5" id="lXP-w1-tAN"/>
+                                            <outlet property="lblMatricula" destination="el0-os-Aqi" id="NtT-Uf-elw"/>
                                             <outlet property="lblNombre" destination="0YY-Bi-G3K" id="yrj-4H-9Gf"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="5CS-La-Y1H"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="5yi-6n-DvP"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
